@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pathao Clone - Ride Booking</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Pathao Clone</h1>
+  </header>
+
+  <section class="booking-form">
+    <h2>Book a Ride</h2>
+    <form id="rideForm">
+      <input type="text" id="pickup" placeholder="Pickup Location" required />
+      <input type="text" id="dropoff" placeholder="Drop-off Location" required />
+      <select id="vehicle" required>
+        <option value="">Select Vehicle</option>
+        <option value="bike">Bike</option>
+        <option value="car">Car</option>
+      </select>
+      <button type="submit">Request Ride</button>
+    </form>
+    <p id="statusMsg"></p>
+  </section>
+
+  <div id="map"></div>
+
+  <script src="script.js"></script>
+  <!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
+  <script async defer
+    src="https://www.google.com/maps/@27.6756757,85.3504552,14z?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D">
+  </script>
+</body>
+</html>
