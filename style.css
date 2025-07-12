@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #d40000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.booking-form {
+  padding: 1rem;
+  background: #f4f4f4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 0.75rem;
+}
+
+input, select, button {
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #d40000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  margin-top: 1rem;
+}
